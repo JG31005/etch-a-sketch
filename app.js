@@ -1,13 +1,14 @@
 
 let divContainer =document.querySelector(".grid-container");
 
-let num=16;
+let num=4;
+
 function createDivs(num){
-    for(let i = 0; i <  num; i++){
+    for(let i = 0; i <  num * num; i++){
         const newdiv = document.createElement("div");
         newdiv.classList.add("pixel");
         newdiv.innerHTML= i;
-        newdiv.style.flexBasis = (100 / Math.sqrt(16)) + '%';
+        newdiv.style.flexBasis = (100 / num) + '%';
         divContainer.appendChild(newdiv);
     }
 }

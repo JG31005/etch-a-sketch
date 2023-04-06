@@ -14,8 +14,8 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
 .pixel{
     margin: 0px;
