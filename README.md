@@ -2,6 +2,7 @@
 simple pixel art canvas. 
 
 features : 
+
 -custom canvas size
 
 -color selection 
