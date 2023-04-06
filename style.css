@@ -20,7 +20,6 @@ body{
 .pixel{
     margin: 0px;
     padding: 0px;
-    flex-basis: calc(100% / (Math.sqrt(16)));
     border: 2px;
     border-style: solid;
     border-color: darkslategrey;
