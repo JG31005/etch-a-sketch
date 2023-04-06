@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container{
+    display: flex;
+    border: 5px;
+    border-style: solid;
+    border-color: darkslategrey;
+    height: 500px;
+    width: 500px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.pixel{
+    margin: 0px;
+    padding: 0px;
+    flex-basis: calc(100% / (Math.sqrt(16)));
+    border: 2px;
+    border-style: solid;
+    border-color: darkslategrey;
+}
