@@ -6,6 +6,7 @@ body{
 
 .grid-container{
     display: flex;
+    flex-direction: column;
     border: 5px;
     border-style: solid;
     border-color: darkslategrey;
@@ -13,8 +14,14 @@ body{
     width: 800px;
     flex-wrap: wrap;
 }
+.row{
+    flex-grow: 1;
+    display: flex;
+
+}
 .pixel{
     flex-grow: 1;
+    flex-shrink: 1;
     border: 2px;
     border-style: solid;
     border-color: darkslategrey;
