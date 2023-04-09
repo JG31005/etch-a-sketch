@@ -9,17 +9,12 @@ body{
     border: 5px;
     border-style: solid;
     border-color: darkslategrey;
-    height: 500px;
-    width: 500px;
+    height: 800px;
+    width: 800px;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    margin: 0px;
 }
 .pixel{
-    margin: 0px;
-    padding: 0px;
+    flex-grow: 1;
     border: 2px;
     border-style: solid;
     border-color: darkslategrey;
