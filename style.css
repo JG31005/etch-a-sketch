@@ -19,10 +19,14 @@ body{
     display: flex;
 
 }
-.pixel{
+.cell{
     flex-grow: 1;
     flex-shrink: 1;
     border: 2px;
     border-style: solid;
     border-color: darkslategrey;
+}
+
+.hovered{
+    background-color: black;
 }

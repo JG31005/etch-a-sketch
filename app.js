@@ -11,9 +11,29 @@ function createDivs(num){
         for(let j = 0; j < num; j++){
             const cell = document.createElement("div");
             rowContainer.appendChild(cell);
-            cell.classList.add("pixel");
+            cell.classList.add("cell");
         }
     }
+    const cells = document.getElementsByClassName('cell');
+console.log(cells);
+for(const cell of cells){
+    cell.addEventListener('mouseover', function onhover() {
+        cell.classList.add("hovered");
+    })
 }
+}
+/*
+const cells = document.querySelectorAll(".pixel");
+console.log(cells);
+
+cells.forEach(() =>{
+    cells.addEventListener("mouseover",() =>{
+        cells.classList.add("hovered");
+    })
+    
+})
+*/
+
+
 createDivs(num);
 
