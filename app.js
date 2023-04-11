@@ -15,24 +15,13 @@ function createDivs(num){
         }
     }
     const cells = document.getElementsByClassName('cell');
-console.log(cells);
-for(const cell of cells){
-    cell.addEventListener('mouseover', function onhover() {
-        cell.classList.add("hovered");
-    })
+    console.log(cells);
+    for(const cell of cells){
+        cell.addEventListener('mouseover', function onhover() {
+            cell.classList.add("hovered");
+        })
+    }
 }
-}
-/*
-const cells = document.querySelectorAll(".pixel");
-console.log(cells);
-
-cells.forEach(() =>{
-    cells.addEventListener("mouseover",() =>{
-        cells.classList.add("hovered");
-    })
-    
-})
-*/
 
 
 createDivs(num);
