@@ -31,3 +31,18 @@ body{
 .hovered{
     background-color: black;
 }
+
+.choice-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.setbtn{
+    border-radius: 5px;
+    display: flex;
+    padding: 5px;
+    background-color: skyblue;
+}

@@ -1,7 +1,10 @@
 
 let divContainer =document.querySelector(".grid-container");
 
-let num=16;
+let setcells = document.querySelector(".setbtn");
+
+//let num = document.getElementById('cellsChoice').value;
+//let num=16;
 
 function createDivs(num){
     for(let i = 0; i <  num; i++){
@@ -23,6 +26,11 @@ function createDivs(num){
     }
 }
 
+setcells.addEventListener('click' , () =>{
+    let num = document.getElementById('cellsChoice').value;
+    createDivs(num);
+})
 
-createDivs(num);
+
+//createDivs(num);
 
