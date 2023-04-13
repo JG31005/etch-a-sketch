@@ -28,6 +28,14 @@ function createDivs(num){
 
 setcells.addEventListener('click' , () =>{
     let num = document.getElementById('cellsChoice').value;
+    let allpixels = document.querySelectorAll('.cell');
+    allpixels.forEach( (cell) =>{
+        cell.remove();
+    })
+    let allrows = document.querySelectorAll('.row');
+    allrows.forEach( (row) =>{
+        row.remove();
+    })
     createDivs(num);
 })
 
