@@ -26,6 +26,10 @@ function createDivs(num){
     }
 }
 
+function randomRGBA(){
+    let 
+}
+
 setcells.addEventListener('click' , () =>{
     let num = document.getElementById('cellsChoice').value;
     let allpixels = document.querySelectorAll('.cell');

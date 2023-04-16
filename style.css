@@ -18,6 +18,7 @@ body{
 .row{
     flex-grow: 1;
     display: flex;
+    color: rgba(red, green, blue, alpha);
 
 }
 .cell{
@@ -37,7 +38,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
 }
 
 .setbtn{
@@ -45,4 +46,18 @@ body{
     display: flex;
     padding: 5px;
     background-color: skyblue;
+    opacity: .8;
+    cursor: pointer;
+}
+
+.rainbow-mode{
+    opacity: .8;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: greenyellow;
+    cursor: pointer;
+}
+.rainbow-mode:hover{
+    opacity: 1;
+    
 }
