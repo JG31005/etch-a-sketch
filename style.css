@@ -50,14 +50,10 @@ body{
     cursor: pointer;
 }
 
-.rainbow-mode{
+.rainbowmode-container{
     opacity: .8;
-    border-radius: 5px;
-    padding: 5px;
-    background-color: greenyellow;
-    cursor: pointer;
 }
-.rainbow-mode:hover{
+.rainbowmode-container:hover{
     opacity: 1;
     
 }

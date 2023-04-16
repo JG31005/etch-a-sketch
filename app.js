@@ -3,8 +3,21 @@ let divContainer =document.querySelector(".grid-container");
 
 let setcells = document.querySelector(".setbtn");
 
-//let num = document.getElementById('cellsChoice').value;
-//let num=16;
+let rainbow = document.querySelector('.rainbow-mode');
+
+let rainbowStatus = 0;
+/*
+rainbow.addEventListener('click',() =>{
+    for(const cell of cells){
+        let color = randomRGBA();
+        cell.style.cssText = 'color:'+color; 
+    }
+})
+*/
+function randomRGBA(){
+    let rounding = Math.round, rndm = Math.random, max=255; 
+    return 'rgba(' + rounding(rndm()*max) + ',' + rounding(rndm()*max) + ',' + rounding(rndm()*max) + ',' + rndm().toFixed(1) + ')';
+}
 
 function createDivs(num){
     for(let i = 0; i <  num; i++){
@@ -19,16 +32,15 @@ function createDivs(num){
     }
     const cells = document.getElementsByClassName('cell');
     console.log(cells);
+
     for(const cell of cells){
         cell.addEventListener('mouseover', function onhover() {
-            cell.classList.add("hovered");
+            cell.style.cssText = 'background: black;';
         })
     }
 }
 
-function randomRGBA(){
-    let 
-}
+if()
 
 setcells.addEventListener('click' , () =>{
     let num = document.getElementById('cellsChoice').value;
