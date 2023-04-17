@@ -3,23 +3,17 @@ let divContainer =document.querySelector(".grid-container");
 
 let setcells = document.querySelector(".setbtn");
 
-let rainbow = document.querySelector('.rainbow-mode');
+
 
 let rainbowStatus = 0;
-/*
-rainbow.addEventListener('click',() =>{
-    for(const cell of cells){
-        let color = randomRGBA();
-        cell.style.cssText = 'color:'+color; 
-    }
-})
-*/
+
 function randomRGBA(){
     let rounding = Math.round, rndm = Math.random, max=255; 
     return 'rgba(' + rounding(rndm()*max) + ',' + rounding(rndm()*max) + ',' + rounding(rndm()*max) + ',' + rndm().toFixed(1) + ')';
 }
 
 function createDivs(num){
+    let rainbow = document.getElementById('rainbowmode').checked;
     for(let i = 0; i <  num; i++){
         const rowContainer = document.createElement("div");
         rowContainer.classList.add("row");
@@ -30,17 +24,26 @@ function createDivs(num){
             cell.classList.add("cell");
         }
     }
+    
     const cells = document.getElementsByClassName('cell');
     console.log(cells);
 
-    for(const cell of cells){
-        cell.addEventListener('mouseover', function onhover() {
-            cell.style.cssText = 'background: black;';
+    if(rainbow){
+        console.log(rainbow);
+        for(const cell of cells){
+            let color = randomRGBA();
+            cell.addEventListener('mouseover', function onhover(){
+                cell.style.cssText = 'background: '+color +';';
+            })
+        }
+    }else {
+        for(const cell of cells){
+           cell.addEventListener('mouseover', function onhover() {
+                cell.style.cssText = 'background: black;';
         })
+        }
     }
 }
-
-if()
 
 setcells.addEventListener('click' , () =>{
     let num = document.getElementById('cellsChoice').value;
@@ -56,5 +59,4 @@ setcells.addEventListener('click' , () =>{
 })
 
 
-//createDivs(num);
 
